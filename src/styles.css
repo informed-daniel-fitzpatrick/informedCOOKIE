@@ -1,0 +1,65 @@
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-header__container {
+  border-bottom-color: transparent;
+}
+
+.app-header__brand {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.app-main {
+  flex: 1 0 auto;
+}
+
+.cookie-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.ascii-cookie {
+  margin: 0 0 24px;
+  color: #4c2c00;
+  font-family: monospace;
+  font-size: clamp(14px, 4vw, 22px);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.cookie-total {
+  display: block;
+}
+
+.app-footer__copyright {
+  white-space: nowrap;
+}
+
+@media (min-width: 64.0625em) {
+  .govuk-width-container {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 40.0525em) {
+  .app-footer__copyright {
+    margin-top: 20px;
+  }
+}
