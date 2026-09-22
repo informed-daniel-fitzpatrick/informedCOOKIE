@@ -139,8 +139,7 @@ function App() {
                 ))}
               </ul>
               <span className="govuk-footer__licence-description">
-                InformedCOOKIE is a demonstration service from Informed
-                Solutions.
+                InformedCOOKIE is not a real service - sorry if you were hungry
               </span>
             </div>
             <div className="govuk-footer__meta-item app-footer__copyright">
