@@ -44,26 +44,6 @@ the future.
 - `npm run dev` starts the development server.
 - `npm run typecheck` checks the TypeScript code without producing a build.
 
-## Project structure
-
-- `src/main.tsx` starts React and loads the shared styles.
-- `src/App.tsx` owns the cookie total and coordinates the page components.
-- `src/cookieStorage.ts` reads and writes the total in browser storage.
-- `src/components/CookieCounter.tsx` displays the total and bakery controls.
-- `src/components/ServiceHeader.tsx` displays the service header.
-- `src/components/PhaseBanner.tsx` displays the beta phase message.
-- `src/components/ServiceFooter.tsx` displays support links and the disclaimer.
-- `src/components/PlaceholderLink.tsx` provides shared behaviour for unfinished
-  links.
-- `src/styles.css` contains application-specific layout and presentation rules.
-
-## Data flow
-
-`App` loads the initial total from `cookieStorage`, owns that value as React
-state, and passes it to `CookieCounter`. The counter reports user actions back
-to `App`, which updates the state. A React effect then asks `cookieStorage` to
-persist the latest value for the next page load.
-
 ## Coding challenges
 
 This repository deliberately contains several defects and unfinished features.
@@ -147,3 +127,38 @@ change.
 - The implementation follows the existing project structure and GOV.UK styling.
 - Existing functionality continues to work.
 - `npm run typecheck` passes.
+
+## Tips and tricks
+
+- Ask OpenCode to explain unfamiliar files, components, functions, or data flow
+  before making changes.
+- Ask OpenCode to triage a challenge first by identifying the likely cause and
+  the files that need investigation.
+- Break larger tasks into small, focused changes and check the result after
+  each change.
+- Share symptoms, reproduction steps, error messages, and acceptance criteria
+  when asking OpenCode for help.
+- Ask OpenCode to review your changes for regressions and check that each
+  acceptance criterion is covered.
+- Inspect the Git diff to understand exactly what changed before moving on.
+- Run `npm run typecheck` after completing each challenge.
+
+## Project structure
+
+- `src/main.tsx` starts React and loads the shared styles.
+- `src/App.tsx` owns the cookie total and coordinates the page components.
+- `src/cookieStorage.ts` reads and writes the total in browser storage.
+- `src/components/CookieCounter.tsx` displays the total and bakery controls.
+- `src/components/ServiceHeader.tsx` displays the service header.
+- `src/components/PhaseBanner.tsx` displays the beta phase message.
+- `src/components/ServiceFooter.tsx` displays support links and the disclaimer.
+- `src/components/PlaceholderLink.tsx` provides shared behaviour for unfinished
+  links.
+- `src/styles.css` contains application-specific layout and presentation rules.
+
+## Data flow
+
+`App` loads the initial total from `cookieStorage`, owns that value as React
+state, and passes it to `CookieCounter`. The counter reports user actions back
+to `App`, which updates the state. A React effect then asks `cookieStorage` to
+persist the latest value for the next page load.
