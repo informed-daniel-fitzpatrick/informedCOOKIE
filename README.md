@@ -92,7 +92,7 @@ The **Reset cookies** button does not do anything.
 
 #### Task
 
-Format the displayed cookie total with locale-aware thousands separators. You
+Format the displayed cookie total with comma-separated thousands (like 1,000 or 10,000). You
 can temporarily seed a large value while developing the change.
 
 #### Acceptance criteria
