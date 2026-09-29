@@ -44,7 +44,7 @@ the future.
 - `npm run dev` starts the development server.
 - `npm run typecheck` checks the TypeScript code without producing a build.
 
-## Coding challenges
+# Coding challenges
 
 This repository deliberately contains several defects and unfinished features.
 Use OpenCode to investigate each report, make the smallest appropriate change,
