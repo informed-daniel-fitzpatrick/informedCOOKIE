@@ -29,6 +29,7 @@ body,
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 32rem;
   margin-top: 40px;
   text-align: left;
 }
@@ -44,6 +45,12 @@ body,
 
 .cookie-total {
   display: block;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .app-footer__copyright {
