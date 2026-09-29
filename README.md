@@ -76,20 +76,7 @@ Selecting **Bake Cookie** once changes the total by more than one.
 - The total before the refresh is restored when the page reloads.
 - A first-time visitor still starts with zero cookies.
 
-### 3. The page overflows on mobile
-
-#### Symptom
-
-At narrow viewport widths, the page can be scrolled horizontally and some
-content extends beyond the visible area.
-
-#### Acceptance criteria
-
-- The page has no horizontal overflow at a viewport width of 320 pixels.
-- The cookie artwork and controls remain readable and usable.
-- The desktop layout is unchanged.
-
-### 4. Reset cookies is unfinished
+### 3. Reset cookies is unfinished
 
 #### Symptom
 
@@ -101,7 +88,7 @@ The **Reset cookies** button does not do anything.
 - The reset value remains zero after refreshing the page.
 - The button remains keyboard accessible.
 
-### 5. Large totals are difficult to read
+### 4. Large totals are difficult to read
 
 #### Task
 
@@ -114,9 +101,9 @@ can temporarily seed a large value while developing the change.
 - Formatting does not change the numeric value used for baking or persistence.
 - Small totals continue to display normally.
 
-### 6. Add your own idea
+### 5. Add your own idea
 
-Once the first five challenges are complete, use the model to suggest new
+Once the first four challenges are complete, use the model to suggest new
 functionality or improvements for InformedCOOKIE. Discuss the ideas with the
 model, choose one that interests you, and ask it to help you implement the
 change.

@@ -35,9 +35,10 @@ Gameplay mechanics are intentionally undefined. Do not introduce a default set o
 
 ## Fast Iteration Rules
 
-- Never create or run unit, integration, end-to-end, snapshot, or other automated tests.
-- Perform only minimal validation after changes: run the existing TypeScript type-check command when one is available.
-- Do not add testing frameworks, fixtures, test scripts, or test configuration.
+- Focused unit tests and assertions are allowed when they demonstrate or verify the requested behaviour.
+- Prefer small unit-test examples over integration, end-to-end, snapshot, or broad automated test suites.
+- Add a testing framework, fixtures, test scripts, or test configuration only when they are needed for the requested unit-testing demonstration.
+- Perform minimal validation after changes: run the existing TypeScript type-check command and any relevant unit tests when available.
 - Do not run builds, linters, formatters, or broad validation commands unless the prompt explicitly requests them.
 - Do not refactor unrelated code or add production infrastructure, authentication, analytics, deployment configuration, or other hardening unless explicitly requested.
 - If a detail is unspecified, choose the simplest reversible implementation that leaves room for the next presentation prompt.
