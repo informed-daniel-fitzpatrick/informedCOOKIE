@@ -33,7 +33,7 @@ function App() {
               <h1 className="govuk-heading-xl govuk-!-margin-bottom-2">
                 InformedCOOKIE
               </h1>
-              <p className="govuk-body-l">Cookies for the civil service</p>
+              <p className="govuk-body-l">CMS (cookie management service)</p>
 
               <CookieCounter
                 currentCookies={currentCookies}
